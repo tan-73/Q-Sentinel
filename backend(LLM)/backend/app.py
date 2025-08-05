@@ -15,8 +15,7 @@ app.config['UPLOAD_FOLDER'] = 'uploads'
 os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
 # Configure Gemini API
-# API_KEY = "AIzaSyDu3cVQWQVkt9XxxZ1MV4lR9Iicov389Ug"
-API_KEY = "AIzaSyCh3FG_FeYJJ7t5RLQlpJgj2XgascJ6A58"
+API_KEY = ""
 genai.configure(api_key=API_KEY)
 model = genai.GenerativeModel('gemini-1.5-flash')
 
