@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Analysis Result</title>
+</head>
+<body>
+  <h2>🔍 Analysis Result for: {{ original_filename }}</h2>
+  <h3>🧪 Mode: {{ analysis_type }}</h3>
+  
+  <img src="data:image/png;base64,{{ image_data }}" width="600"><br><br>
+  
+  <h3>📊 Report:</h3>
+  <pre style="white-space: pre-wrap; font-size: 16px;">{{ analysis }}</pre>
+
+  <a href="/">🔙 Back to Upload</a>
+</body>
+</html>
+

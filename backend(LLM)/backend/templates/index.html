@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Military Image Analyzer</title>
+</head>
+<body>
+  <h1>🛡️ Military Image Analyzer - HAL Aerothon</h1>
+  <form method="post" action="/upload" enctype="multipart/form-data">
+    <label>Select Military Image:</label><br>
+    <input type="file" name="image" accept="image/*" required><br><br>
+
+    <label>Choose Analysis Type:</label><br>
+    <select name="analysis_type">
+      <option value="comprehensive">Comprehensive</option>
+      <option value="quick">Quick</option>
+      <option value="detection">Object Detection</option>
+      <option value="threat">Threat Assessment</option>
+    </select><br><br>
+
+    <button type="submit">Analyze</button>
+  </form>
+
+  <br><a href="/api_status">Check Gemini API Status</a>
+</body>
+</html>

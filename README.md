@@ -1,0 +1,3 @@
+- Run npm run dev on in agni-eye-sentinel\
+- Run python app.py in backend(LLM)\backend
+- Run python -m streamlit run st.py in agni-eye-sentinel\
